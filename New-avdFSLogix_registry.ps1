@@ -1,7 +1,5 @@
 # Set registry settings for FSLogix configuration used with Azure Virtual Desktop
 
-
-
 # Enable Profile Container
 New-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Profiles" -Name "Enabled" -Value 1 -PropertyType DWORD -Force
 # This setting enables the use of the FSLogix Profile Container, which stores user profiles in a virtual hard disk (VHD) file.
@@ -25,6 +23,3 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Logging" -Name "LogDir" -Value "C
 # Set FSLogix Log Retention Period
 New-ItemProperty -Path "HKLM:\SOFTWARE\FSLogix\Logging" -Name "LogFileKeepingPeriod" -Value 30 -PropertyType DWORD -Force
 # This setting specifies the retention period of the FSLogix Log file.
-
-
-# cjzRx4xi%9e^N3@^&T
